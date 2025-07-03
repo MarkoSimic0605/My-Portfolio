@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no"
+    />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management Dashboard</h1>
+
+      <div class="controls">
+        <button id="reset" class="btn-reset">Reset User Table</button>
+        <div class="search-container">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by name or email..."
+          />
+        </div>
+        <button id="add-user" class="btn-primary">Add User</button>
+      </div>
+
+      <div class="table-container">
+        <table id="user-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-info">Page 1 of 5</span>
+        <button id="next-page">Next</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Add User</h2>
+        <form id="user-form">
+          <input type="hidden" id="user-id" />
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Enter full name..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter email address..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="role">User Role:</label>
+            <select id="role" required>
+              <option value="" disabled selected>Select a role</option>
+
+              <option value="user">User</option>
+              <option value="editor">Editor</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Save Changes</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

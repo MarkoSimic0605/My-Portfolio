@@ -1,0 +1,36 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:landing": "parcel src-portfolio/index.html --open --no-cache",
+    "dev:dashboard": "parcel src-portfolio/projects/dashboard-crud/dash.html --open --no-cache",
+    "dev:movie": "parcel src-portfolio/projects/movie-app-spa/public/movie-app.html --open --no-cache",
+    "dev:ecommerce": "parcel src-portfolio/projects/ecommerce/src/index.html --open --no-cache",
+    "build:landing": "parcel build src-portfolio/index.html --dist-dir dist-landing-page",
+    "build:dashboard": "parcel build src-portfolio/projects/dashboard-crud/dash.html --dist-dir dist-dashboard",
+    "build:movie": "parcel build src-portfolio/projects/movie-app-spa/public/movie-app.html --dist-dir dist-movie",
+    "build:ecommerce": "parcel src-portfolio/projects/ecommerce/src/index.html --dist-dir dist-ecommerce",
+    "start": "node start.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-json": "^2.14.4",
+    "buffer": "^6.0.3",
+    "parcel": "^2.14.4",
+    "svgo": "^3.3.2"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "axios": "^1.9.0",
+    "inquirer": "^12.5.2",
+    "kill-port": "^2.0.1"
+  },
+  "staticFiles": {
+    "staticPath": "static"
+  },
+  "deploy:landing": "npm run build:landing && netlify deploy --dir=dist-landing-page --prod"
+}

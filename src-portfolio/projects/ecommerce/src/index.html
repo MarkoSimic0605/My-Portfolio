@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">E-commerce Shop</h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Products</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <div class="nav__icons">
+            <div class="cart-dropdown">
+              <button class="close-cart">&times;</button>
+              <div class="cart-items"></div>
+              <div class="cart-actions">
+                <button class="btn-clear">Empty your cart</button>
+              </div>
+            </div>
+            <!-- <i class="fas fa-search"></i> -->
+            <i class="fas fa-shopping-cart cart-icon"
+              ><span class="cart-count">0</span></i
+            >
+          </div>
+        </nav>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="products-section">
+        <div class="container">
+          <div class="filters">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search for product..."
+            />
+            <select class="category-filter">
+              <option value="all">All categories</option>
+            </select>
+          </div>
+
+          <div class="products-grid"></div>
+
+          <div class="pagination">
+            <button class="btn-prev">Prev</button>
+            <div class="page-numbers"></div>
+            <button class="btn-next">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 E-Commerce Shop</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

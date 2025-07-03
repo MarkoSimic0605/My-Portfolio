@@ -1,0 +1,146 @@
+.favorites-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#fav-toggle {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+#fav-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  color: rgba(0, 0, 0);
+}
+
+#favorites-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 5px;
+  z-index: 1000;
+  max-height: 60vh;
+  overflow-y: auto;
+  width: 280px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: none;
+}
+
+#favorites-dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+#favorite-btn {
+  color: white;
+}
+
+#fav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fav-list button:focus,
+#fav-list a:focus {
+  outline: 2px solid #f5c518;
+  outline-offset: 2px;
+}
+
+#fav-list li {
+  padding: 10px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+#fav-list li:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#fav-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#fav-list a:hover {
+  color: #f5c518;
+}
+
+#fav-list button {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#fav-list button:hover {
+  background-color: rgba(255, 77, 77, 0.1);
+}
+
+.favorite-link {
+  transition: color 0.2s ease;
+}
+
+.favorite-link:hover {
+  color: #f5c518;
+  text-decoration: underline;
+}
+
+.favorites-count {
+  font-weight: bold;
+}
+
+.remove-favorite {
+  transition: all 0.2s ease;
+}
+
+.remove-favorite:hover {
+  transform: scale(1.2);
+}
+
+.empty-favorites {
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  #favorites-dropdown {
+    width: 90vw;
+    right: 5vw;
+    max-height: 50vh;
+  }
+
+  #fav-toggle {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

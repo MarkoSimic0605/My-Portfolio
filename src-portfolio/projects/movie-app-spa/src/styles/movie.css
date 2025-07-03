@@ -1,0 +1,94 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, #fff1eb, #ace0f9);
+  color: #1f1f1f;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 40px; /* Give space for absolute positioned button */
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#search-input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+#movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.movie {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.poster-wrapper {
+  position: relative;
+}
+
+.poster {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.iconAddBookmark {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.671);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.iconAddBookmark:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive grid */
+@media (max-width: 600px) {
+  #movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#search-input:focus,
+.iconAddBookmark:focus {
+  outline: 2px solid #f5c518;
+  outline-offset: 2px;
+}

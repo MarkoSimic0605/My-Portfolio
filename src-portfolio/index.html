@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Hi, I'm <span class="highlight">Marko</span></h1>
+        <p>Frontend Developer | JavaScript Enthusiast</p>
+      </section>
+
+      <!-- Projects Section -->
+      <div class="container">
+        <section id="projects" class="projects">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+              <img src="images/dash_crud.png" alt="dashboard-crud" />
+              <h3>Dashboard-CRUD</h3>
+              <p>JavaScript app</p>
+              <div class="project-links">
+                <a
+                  href="https://marko-dashboard-crud.netlify.app"
+                  class="btn"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a href="#" class="btn secondary">Code</a>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+              <img src="images/movie_app.png" alt="Movie App" />
+              <h3>Movie App</h3>
+              <p>MovieApp</p>
+              <div class="project-links">
+                <a
+                  href="https://marko-movieapp-spa.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >Live Demo</a
+                >
+                <a href="#" class="btn secondary">Code</a>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+              <img src="images/Ecommerce.png" alt="Memory Game Preview" />
+              <h3>E-Commerce</h3>
+              <p>E-Commerce shop</p>
+              <div class="project-links">
+                <a
+                  href="https://marko-ecommerceshop.netlify.app"
+                  target="_blank"
+                  class="btn"
+                  >Live Demo</a
+                >
+                <a href="#" class="btn secondary">Code</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- About Me Section -->
+      <div class="container">
+        <section id="about" class="about">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <img src="images/marco.webp" alt="My Photo" class="about-img" />
+            <div class="about-text">
+              <p>
+                I'm a frontend developer passionate about JavaScript and
+                building interactive web applications. Currently focused on
+                Typescript and React.
+              </p>
+              <p>
+                When I'm not coding, I enjoy playing chess and having quality
+                family time.
+              </p>
+              <div class="skills">
+                <h3>Skills:</h3>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>Git/GitHub</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Contact Section -->
+      <div class="container">
+        <section id="contact" class="contact">
+          <h2>Get In Touch</h2>
+          <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name..."
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email..."
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+              <p><i class="fas fa-envelope"></i> marco.simic1987@gmail.com</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Marko Simic. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

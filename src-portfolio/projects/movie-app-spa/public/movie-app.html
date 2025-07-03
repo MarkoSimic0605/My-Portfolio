@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="../src/styles/movie.css" />
+    <link rel="stylesheet" href="../src/styles/moviePreview.css" />
+    <link rel="stylesheet" href="../src/styles/favorites.css" />
+  </head>
+  <body>
+    <div class="favorites-container">
+      <button id="fav-toggle" aria-haspopup="true" aria-expanded="false">
+        ❤️ Favorites (<span class="favorites-count">0</span>)
+      </button>
+      <div id="favorites-dropdown">
+        <div id="fav-list"></div>
+      </div>
+    </div>
+
+    <header id="main-header">
+      <h1>Movie App</h1>
+      <input type="text" id="search-input" placeholder="Search movies..." />
+    </header>
+
+    <main id="app"></main>
+
+    <!-- Toast notification for favorites -->
+    <div id="toast" class="toast hidden" aria-live="polite"></div>
+
+    <script type="module" src="../src/movieMain.js"></script>
+  </body>
+</html>
