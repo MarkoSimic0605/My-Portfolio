@@ -28,7 +28,7 @@ The portfolio contains the following independent projects, each structured using
   - Working contact form integrated with [EmailJS](https://www.emailjs.com/)
 
 - **Live Demo:** [https://marko-portfolio-landingpage.netlify.app](https://marko-portfolio-landingpage.netlify.app)
-- **Code:** [GitHub Repo](https://github.com/your-username/portfolio-landing)
+- **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/blob/main/src-portfolio/index.html)
 
 ---
 
@@ -44,7 +44,7 @@ The portfolio contains the following independent projects, each structured using
 
 - **Note:** No user authentication or admin levels. Built for showcasing functionality.
 - **Live Demo:** [https://marko-dashboard-crud.netlify.app](https://marko-dashboard-crud.netlify.app)
-- **Code:** [GitHub Repo](https://github.com/your-username/dashboard-crud-app)
+- **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/dashboard-crud)
 
 ---
 
@@ -60,7 +60,7 @@ The portfolio contains the following independent projects, each structured using
   - Add/remove favorites using LocalStorage
 
 - **Live Demo:** [https://marko-movieapp-spa.netlify.app](https://marko-movieapp-spa.netlify.app)
-- **Code:** [GitHub Repo](https://github.com/your-username/movie-app-spa)
+- **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/movie-app-spa)
 
 ---
 
@@ -78,7 +78,7 @@ The portfolio contains the following independent projects, each structured using
   - Toast notifications for cart updates
 
 - **Live Demo:** [https://marko-ecommerceshop.netlify.app](https://marko-ecommerceshop.netlify.app)
-- **Code:** [GitHub Repo](https://github.com/your-username/ecommerce-spa)
+- **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/ecommerce/src)
 
 ---
 
@@ -101,8 +101,8 @@ To run any project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-portfolio-repo.git
-cd your-portfolio-repo
+git clone https://MarkoSimic0605@github.com/MarkoSimic0605/My-Portfolio.git
+cd My-Portfolio
 ```
 
 ### 2. Install Dependencies
@@ -146,5 +146,5 @@ For inquiries or collaborations: **Email:** \[[marco.simic1987@gmail.com](mailto
 ---
 
 > Built with 💻 by Marko
-# My-Portfolio
+
 # My-Portfolio
