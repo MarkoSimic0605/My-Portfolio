@@ -19,6 +19,8 @@ The portfolio contains the following independent projects, each structured using
 
 ### 1. 🚀 Landing Page
 
+![Landing Page Dark theme Screenshot](./screenshots/port_landpage.png)
+
 - **Purpose:** Personal presentation and contact form.
 - **Features:**
 
@@ -27,12 +29,16 @@ The portfolio contains the following independent projects, each structured using
   - Theme change option
   - Working contact form integrated with [EmailJS](https://www.emailjs.com/)
 
+  ![Landing Page Light theme Screenshot](./screenshots/port_landpage2.png.png)
+
 - **Live Demo:** [https://marko-portfolio-landingpage.netlify.app](https://marko-portfolio-landingpage.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/blob/main/src-portfolio/index.html)
 
 ---
 
 ### 2. 🧮 Dashboard CRUD App
+
+![Dashboard Screenshot](./screenshots/dash_crud.png)
 
 - **Purpose:** Demonstrates CRUD operations with users.
 - **Features:**
@@ -42,6 +48,8 @@ The portfolio contains the following independent projects, each structured using
   - Search with debounce
   - Pagination and toast notifications
 
+  ![Pagination Screenshot](./screenshots/dash_preview.png)
+
 - **Note:** No user authentication or admin levels. Built for showcasing functionality.
 - **Live Demo:** [https://marko-dashboard-crud.netlify.app](https://marko-dashboard-crud.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/dashboard-crud)
@@ -49,6 +57,8 @@ The portfolio contains the following independent projects, each structured using
 ---
 
 ### 3. 🎬 Movie App (TMDB API)
+
+![MovieApp Screenshot](./screenshots/movie_app.png)
 
 - **Purpose:** Movie browsing and detail preview SPA.
 - **Features:**
@@ -59,12 +69,16 @@ The portfolio contains the following independent projects, each structured using
   - Trailer preview and movie detail page
   - Add/remove favorites using LocalStorage
 
+  ![Trailer preview Screenshot](./screenshots/trailer_preview.png)
+
 - **Live Demo:** [https://marko-movieapp-spa.netlify.app](https://marko-movieapp-spa.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/movie-app-spa)
 
 ---
 
 ### 4. 🛒 E-commerce
+
+![EcommerceShop Screenshot](./screenshots/Ecommerce.png)
 
 - **Purpose:** Shopping cart demo with product browsing.
 - **Features:**
@@ -76,6 +90,8 @@ The portfolio contains the following independent projects, each structured using
   - Pagination, category filters, and search
   - Data stored in LocalStorage
   - Toast notifications for cart updates
+
+  ![EcommerceShop Cart Dropdown Screenshot](./screenshots/Ecommerce.png)
 
 - **Live Demo:** [https://marko-ecommerceshop.netlify.app](https://marko-ecommerceshop.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/ecommerce/src)
