@@ -34,5 +34,6 @@
   "staticFiles": {
     "staticPath": "static"
   },
-  "deploy:landing": "npm run build:landing && netlify deploy --dir=dist-landing-page --prod"
+  "deploy:landing": "npm run build:landing && netlify deploy --dir=dist-landing-page --prod",
+  "deploy:dashboard": "npm run build:dashboard && netlify deploy --dir=dist-dashboard --prod"
 }

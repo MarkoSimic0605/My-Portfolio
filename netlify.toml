@@ -4,6 +4,10 @@
   publish = "dist-landing-page"
   functions = "netlify/functions"
 
+  [build]
+  command = "npm run build:dashboard"
+  publish = "dist-dashboard"
+
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
   #[[redirects]]
