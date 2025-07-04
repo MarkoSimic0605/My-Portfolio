@@ -1,8 +1,8 @@
 # example netlify.toml
 [build]
-  command = "npm run build:dashboard"
+  command = "npm run build:landing"
+  publish = "dist-landing-page"
   functions = "netlify/functions"
-  publish = "dist-dashboard"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.

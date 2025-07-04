@@ -27,7 +27,9 @@
     "@emailjs/browser": "^4.4.1",
     "axios": "^1.9.0",
     "inquirer": "^12.5.2",
-    "kill-port": "^2.0.1"
+    "kill-port": "^2.0.1",
+    "@parcel/resolver-default": "^2.8.3",
+    "@parcel/transformer-html": "^2.8.3"
   },
   "staticFiles": {
     "staticPath": "static"
