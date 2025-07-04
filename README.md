@@ -29,8 +29,6 @@ The portfolio contains the following independent projects, each structured using
   - Theme change option
   - Working contact form integrated with [EmailJS](https://www.emailjs.com/)
 
-  ![Landing Page Light theme Screenshot](./screenshots/port_landpage2.png)
-
 - **Live Demo:** [https://marko-portfolio-landingpage.netlify.app](https://marko-portfolio-landingpage.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/blob/main/src-portfolio/index.html)
 
