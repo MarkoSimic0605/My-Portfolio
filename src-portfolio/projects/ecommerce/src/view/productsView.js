@@ -120,6 +120,7 @@ export default class ProductsView {
     burger.addEventListener("click", (e) => {
       navList.classList.toggle("active");
       burger.classList.toggle("toggle");
+      document.body.classList.toggle("menu-open");
       e.stopPropagation();
     });
 
@@ -129,6 +130,7 @@ export default class ProductsView {
       if (clickedOutside) {
         navList.classList.remove("active");
         burger.classList.remove("toggle");
+        document.body.classList.remove("menu-open");
       }
     });
 
@@ -136,6 +138,7 @@ export default class ProductsView {
       link.addEventListener("click", () => {
         navList.classList.remove("active");
         burger.classList.remove("toggle");
+        document.body.classList.remove("menu-open");
       });
     });
   }

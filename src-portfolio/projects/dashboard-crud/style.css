@@ -113,7 +113,12 @@ td:nth-child(4) {
 } /* Role */
 th:nth-child(5),
 td:nth-child(5) {
-  width: 150px;
+  min-width: 120px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 /* Actions */
@@ -316,6 +321,9 @@ tr:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .modal-content {
+    width: 80%;
+  }
   .container {
     padding: 10px;
   }
@@ -399,6 +407,10 @@ tr:hover {
 }
 
 @media (max-width: 576px) {
+  .modal-content {
+    width: 80%;
+  }
+
   .pagination {
     flex-direction: column;
     gap: 8px;

@@ -1,8 +1,6 @@
 .favorites-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #fav-toggle {
