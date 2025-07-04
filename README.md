@@ -29,7 +29,7 @@ The portfolio contains the following independent projects, each structured using
   - Theme change option
   - Working contact form integrated with [EmailJS](https://www.emailjs.com/)
 
-  ![Landing Page Light theme Screenshot](./screenshots/port_landpage2.png.png)
+  ![Landing Page Light theme Screenshot](./screenshots/port_landpage2.png)
 
 - **Live Demo:** [https://marko-portfolio-landingpage.netlify.app](https://marko-portfolio-landingpage.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/blob/main/src-portfolio/index.html)
@@ -91,7 +91,7 @@ The portfolio contains the following independent projects, each structured using
   - Data stored in LocalStorage
   - Toast notifications for cart updates
 
-  ![EcommerceShop Cart Dropdown Screenshot](./screenshots/Ecommerce.png)
+  ![EcommerceShop Cart Dropdown Screenshot](./screenshots/ecommerce_preview.png)
 
 - **Live Demo:** [https://marko-ecommerceshop.netlify.app](https://marko-ecommerceshop.netlify.app)
 - **Code:** [GitHub Repo](https://github.com/MarkoSimic0605/My-Portfolio/tree/main/src-portfolio/projects/ecommerce/src)
