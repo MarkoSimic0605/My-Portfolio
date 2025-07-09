@@ -62,7 +62,7 @@ img {
 
 /* ===== REUSABLE COMPONENTS ===== */
 .container {
-  max-width: 90%;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -480,83 +480,4 @@ footer {
   padding: 2rem;
   background: var(--secondary);
   color: white;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-  .project-card img {
-    height: 180px;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    background-color: var(--bg);
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem 0;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 0.3s ease-in-out;
-    z-index: 100;
-  }
-
-  .nav-links.active {
-    transform: scaleY(1);
-  }
-
-  .burger {
-    display: flex;
-    z-index: 101;
-  }
-}
-
-.hero h1 {
-  font-size: 2rem;
-}
-
-.about-content {
-  justify-content: center;
-  text-align: center;
-  padding: 0 0.5rem;
-}
-
-.about-img {
-  padding: 0 0.5rem;
-}
-
-.skills ul {
-  justify-content: center;
-}
-
-nav ul {
-  gap: 1rem;
-}
-
-@media (max-width: 480px) {
-  .project-card img {
-    height: 150px;
-  }
-  .hero {
-    padding: 3rem 1rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .project-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .secondary {
-    margin-top: 0.5rem;
-  }
-  .about-img {
-    padding: 0 0.5rem;
-  }
 }
