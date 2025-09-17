@@ -18,7 +18,7 @@ document.querySelectorAll("nav a").forEach((anchor) => {
 const themeToggle = document.getElementById("theme-toggle");
 const icon = themeToggle.querySelector("i");
 
-// Proveri lokalnu pohranu ili preferencije sistema
+// Check LS
 const savedTheme =
   localStorage.getItem("theme") ||
   (window.matchMedia("(prefers-color-scheme: dark)").matches
